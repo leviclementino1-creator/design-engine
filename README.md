@@ -54,6 +54,8 @@ Um exemplo completo está em [`examples/thumb.py`](examples/thumb.py). A API int
 O repositório é só o **núcleo**. Tudo que é de um cliente (paleta, fontes, cenas) mora num **pacote de marca** em
 `brands/<nome>/`, que fica **fora do git** (só `brands/demo/` é versionado). Para atender um cliente novo você nunca edita
 `lib/`: copia `brands/demo/`, troca o que o cliente precisa e aponta `"brand"` no `config.local.json`.
+A skill começa todo cliente novo por uma **descoberta**: pede as peças, os projetos e o manual, analisa medindo (paleta,
+fontes, escala, composição) e grava o que entendeu em `brand.py` e `ESTILO.md` antes de desenhar qualquer coisa.
 Veja [`brands/README.md`](brands/README.md).
 
 ## Pastas

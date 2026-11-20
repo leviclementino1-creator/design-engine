@@ -12,14 +12,31 @@ A unidade de trabalho é a **cena**: um arquivo Python que monta um `Doc` e grav
 escreve `.jsx` à mão para montar uma arte: muda-se a cena e toca-se de novo.
 
 ```
-briefing -> cena.py -> preview.png (aprovado) -> build no app -> ORDER OK + PARITY OK -> entrega
+cliente (brand.py + ESTILO.md) -> briefing -> cena.py -> preview.png (aprovado) -> build no app -> ORDER OK + PARITY OK -> entrega
 ```
+
+## Primeiro: entender o cliente
+
+Antes de qualquer cena, veja se existe `ENGINE/brands/<cliente>/` com `brand.py` **e** `ESTILO.md`.
+
+- **Não existe (cliente novo)**: leia `references/cliente.md` e rode a descoberta inteira antes de desenhar. Em resumo: peça
+  o material de uma vez (peças que já foram ao ar, dizendo quais ele gosta e quais performaram; `.psd`/`.ai`; manual, logo,
+  fontes; referências que admira e que NÃO quer parecer; onde a peça vai e em que tamanho), **analise medindo** (paleta,
+  fontes, escala do texto, margens, formas, layouts que se repetem, o que é fixo e o que varia), pergunte só o que o material
+  não respondeu, escreva `brand.py` e `ESTILO.md`, e **devolva o que entendeu para o usuário corrigir** antes da primeira
+  cena.
+- **Existe**: leia o `ESTILO.md` inteiro no começo da sessão. Não redescubra o que já está escrito.
+- **O usuário quer só um teste rápido, sem cliente**: use a marca `demo` e diga que a arte vai sair neutra.
+
+Não comece uma peça de cliente com a marca `demo` "só para adiantar": sai genérica e vira retrabalho. Resposta vaga ("moderno
+e clean") não é briefing: peça uma peça que mostre o que ele quer dizer. Peça reprovada ou corrigida à mão vira uma linha em
+"Lições" do `ESTILO.md`, com data.
 
 ## Os portões (nesta ordem, inegociáveis)
 
 | portão | comando | o que pega |
 |---|---|---|
-| a marca existe | `brands/<cliente>/brand.py` com `ACCENT`, `INK`, `PAPER`, `MUTED`, fontes e `FONT_FILES` | arte genérica, fonte que o app não tem |
+| o cliente foi entendido | `brands/<cliente>/brand.py` (`ACCENT`, `INK`, `PAPER`, `MUTED`, fontes, `FONT_FILES`) e `brands/<cliente>/ESTILO.md`, tirados do material dele e confirmados pelo usuário (`references/cliente.md`) | arte genérica, fonte que o app não tem, regra do cliente quebrada |
 | o texto cabe | `max_w=` em todo `d.text(...)` que mora dentro de um recipiente; `fit_size` / `wrap` para encaixar | estouro de borda descoberto no app |
 | preview antes do app | `python ENGINE/lib/preview.py cena.ir.json cena.png`, **abrir e olhar a imagem** | conceito ruim descoberto cedo e barato |
 | build conferido | `python ENGINE/lib/build.py cena.ir.json --app ps\|ai --sheet folha.jpg`, **abrir e olhar a folha** | camada fora de ordem, fonte trocada, forma diferente |
