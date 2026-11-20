@@ -1,0 +1,11 @@
+config.local.json
+__pycache__/
+*.pyc
+out/
+# client brand packs stay on the machine: only the neutral demo is versioned
+brands/*
+!brands/demo/
+!brands/README.md
+*.psd
+*.psb
+*.ai

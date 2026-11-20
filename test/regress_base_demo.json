@@ -1,0 +1,592 @@
+{
+ "t_core.py": {
+  "engine": 1,
+  "h": 720,
+  "layers": [
+   {
+    "box": [
+     0.0,
+     0.0,
+     1280.0,
+     720.0
+    ],
+    "fill": [
+     0.0549,
+     0.0667,
+     0.0863
+    ],
+    "id": "bg",
+    "kind": "rect",
+    "name": "BG",
+    "opacity": 100,
+    "radius": 0.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "box": [
+     60.0,
+     60.0,
+     560.0,
+     600.0
+    ],
+    "fill": [
+     0.9569,
+     0.9451,
+     0.9176
+    ],
+    "id": "panel",
+    "kind": "rect",
+    "name": "Panel",
+    "opacity": 100,
+    "radius": 28.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "box": [
+     680.0,
+     60.0,
+     540.0,
+     300.0
+    ],
+    "fill": null,
+    "id": "frame",
+    "kind": "rect",
+    "name": "Frame",
+    "opacity": 100,
+    "radius": 16.0,
+    "stroke": [
+     0.3216,
+     0.7216,
+     1.0
+    ],
+    "stroke_w": 6.0
+   },
+   {
+    "box": [
+     680.0,
+     400.0,
+     540.0,
+     24.0
+    ],
+    "fill": [
+     0.451,
+     0.4706,
+     0.5098
+    ],
+    "id": "bar",
+    "kind": "rect",
+    "name": "Bar",
+    "opacity": 100,
+    "radius": 0.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "box": [
+     680.0,
+     400.0,
+     360.0,
+     24.0
+    ],
+    "fill": [
+     0.3216,
+     0.7216,
+     1.0
+    ],
+    "id": "bar_fill",
+    "kind": "rect",
+    "name": "Bar fill",
+    "opacity": 100,
+    "radius": 0.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "children": [
+     {
+      "box": [
+       100.0,
+       100.0,
+       96.0,
+       96.0
+      ],
+      "fill": [
+       0.3216,
+       0.7216,
+       1.0
+      ],
+      "id": "dot",
+      "kind": "ellipse",
+      "name": "Dot",
+      "opacity": 100,
+      "stroke": null,
+      "stroke_w": 0.0
+     },
+     {
+      "box": [
+       92.0,
+       92.0,
+       112.0,
+       112.0
+      ],
+      "fill": null,
+      "id": "ring",
+      "kind": "ellipse",
+      "name": "Ring",
+      "opacity": 100,
+      "stroke": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "stroke_w": 4.0
+     },
+     {
+      "align": "center",
+      "fill": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "font": "Arial-BoldMT",
+      "id": "number",
+      "kind": "text",
+      "leading": 76.8,
+      "name": "Number",
+      "opacity": 100,
+      "pos": [
+       148.0,
+       168.0
+      ],
+      "size": 64.0,
+      "text": "7",
+      "tracking": 0,
+      "width": 36.0
+     }
+    ],
+    "id": "badge",
+    "kind": "group",
+    "name": "Badge",
+    "opacity": 100
+   },
+   {
+    "id": "rule",
+    "kind": "line",
+    "name": "Rule",
+    "opacity": 100,
+    "points": [
+     [
+      100.0,
+      250.0
+     ],
+     [
+      580.0,
+      250.0
+     ]
+    ],
+    "stroke": [
+     0.0549,
+     0.0667,
+     0.0863
+    ],
+    "stroke_w": 4.0
+   },
+   {
+    "fill": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "id": "arrow",
+    "kind": "path",
+    "name": "Arrow",
+    "opacity": 100,
+    "points": [
+     [
+      700.0,
+      480.0
+     ],
+     [
+      820.0,
+      480.0
+     ],
+     [
+      820.0,
+      450.0
+     ],
+     [
+      900.0,
+      510.0
+     ],
+     [
+      820.0,
+      570.0
+     ],
+     [
+      820.0,
+      540.0
+     ],
+     [
+      700.0,
+      540.0
+     ]
+    ],
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "children": [
+     {
+      "align": "left",
+      "fill": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "font": "Arial-BoldMT",
+      "id": "title",
+      "kind": "text",
+      "leading": 62.4,
+      "name": "Title",
+      "opacity": 100,
+      "pos": [
+       100.0,
+       340.0
+      ],
+      "size": 52.0,
+      "text": "DESIGN AS DATA",
+      "tracking": 0,
+      "width": 437.35
+     },
+     {
+      "align": "left",
+      "fill": [
+       0.451,
+       0.4706,
+       0.5098
+      ],
+      "font": "ArialMT",
+      "id": "body",
+      "kind": "text",
+      "leading": 40.0,
+      "name": "Body",
+      "opacity": 100,
+      "pos": [
+       100.0,
+       410.0
+      ],
+      "size": 30.0,
+      "text": "One scene in Python,\nthree players.",
+      "tracking": 0,
+      "width": 288.0
+     },
+     {
+      "children": [
+       {
+        "align": "left",
+        "fill": [
+         0.0549,
+         0.0667,
+         0.0863
+        ],
+        "font": "Arial-BoldMT",
+        "id": "tag_left",
+        "kind": "text",
+        "leading": 26.4,
+        "name": "Tag left",
+        "opacity": 100,
+        "pos": [
+         100.0,
+         600.0
+        ],
+        "size": 22.0,
+        "text": "LEFT",
+        "tracking": 200,
+        "width": 67.2
+       },
+       {
+        "align": "center",
+        "fill": [
+         0.0549,
+         0.0667,
+         0.0863
+        ],
+        "font": "Arial-BoldMT",
+        "id": "tag_center",
+        "kind": "text",
+        "leading": 26.4,
+        "name": "Tag center",
+        "opacity": 100,
+        "pos": [
+         340.0,
+         600.0
+        ],
+        "size": 22.0,
+        "text": "CENTER",
+        "tracking": 200,
+        "width": 113.0
+       },
+       {
+        "align": "right",
+        "fill": [
+         0.0549,
+         0.0667,
+         0.0863
+        ],
+        "font": "Arial-BoldMT",
+        "id": "tag_right",
+        "kind": "text",
+        "leading": 26.4,
+        "name": "Tag right",
+        "opacity": 100,
+        "pos": [
+         580.0,
+         600.0
+        ],
+        "size": 22.0,
+        "text": "RIGHT",
+        "tracking": 200,
+        "width": 85.6
+       }
+      ],
+      "id": "tags",
+      "kind": "group",
+      "name": "Tags",
+      "opacity": 100
+     }
+    ],
+    "id": "copy",
+    "kind": "group",
+    "name": "Copy",
+    "opacity": 100
+   },
+   {
+    "box": [
+     960.0,
+     460.0,
+     240.0,
+     160.0
+    ],
+    "id": "swatch",
+    "kind": "image",
+    "name": "Swatch",
+    "opacity": 100,
+    "path": "swatch.png"
+   },
+   {
+    "box": [
+     680.0,
+     60.0,
+     540.0,
+     300.0
+    ],
+    "fill": [
+     0.3216,
+     0.7216,
+     1.0
+    ],
+    "id": "veil",
+    "kind": "rect",
+    "name": "Veil",
+    "opacity": 20,
+    "radius": 16.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   }
+  ],
+  "name": "T core",
+  "w": 1280
+ },
+ "t_text.py": {
+  "engine": 1,
+  "h": 720,
+  "layers": [
+   {
+    "box": [
+     0.0,
+     0.0,
+     1280.0,
+     720.0
+    ],
+    "fill": [
+     0.9569,
+     0.9451,
+     0.9176
+    ],
+    "id": "bg",
+    "kind": "rect",
+    "name": "BG",
+    "opacity": 100,
+    "radius": 0.0,
+    "stroke": null,
+    "stroke_w": 0.0
+   },
+   {
+    "id": "guide_left",
+    "kind": "line",
+    "name": "Guide left",
+    "opacity": 100,
+    "points": [
+     [
+      100.0,
+      40.0
+     ],
+     [
+      100.0,
+      680.0
+     ]
+    ],
+    "stroke": [
+     0.3216,
+     0.7216,
+     1.0
+    ],
+    "stroke_w": 2.0
+   },
+   {
+    "id": "guide_right",
+    "kind": "line",
+    "name": "Guide right",
+    "opacity": 100,
+    "points": [
+     [
+      1180.0,
+      40.0
+     ],
+     [
+      1180.0,
+      680.0
+     ]
+    ],
+    "stroke": [
+     0.3216,
+     0.7216,
+     1.0
+    ],
+    "stroke_w": 2.0
+   },
+   {
+    "align": "left",
+    "fill": [
+     0.0549,
+     0.0667,
+     0.0863
+    ],
+    "font": "Arial-BoldMT",
+    "id": "fit",
+    "kind": "text",
+    "leading": 133.2,
+    "name": "Fit",
+    "opacity": 100,
+    "pos": [
+     100.0,
+     190.0
+    ],
+    "size": 111.0,
+    "text": "AVATAR TO VALLEY",
+    "tracking": 0,
+    "width": 1072.8
+   },
+   {
+    "align": "left",
+    "fill": [
+     0.451,
+     0.4706,
+     0.5098
+    ],
+    "font": "ArialMT",
+    "id": "wrapped",
+    "kind": "text",
+    "leading": 46.0,
+    "name": "Wrapped",
+    "opacity": 100,
+    "pos": [
+     100.0,
+     280.0
+    ],
+    "size": 34.0,
+    "text": "Kerning pairs come from the font file, so the\nwidth measured here is the width the app sets.",
+    "tracking": 0,
+    "width": 698.0
+   },
+   {
+    "children": [
+     {
+      "align": "left",
+      "fill": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "font": "Arial-BoldMT",
+      "id": "tracked_left",
+      "kind": "text",
+      "leading": 48.0,
+      "name": "Tracked left",
+      "opacity": 100,
+      "pos": [
+       100.0,
+       520.0
+      ],
+      "size": 40.0,
+      "text": "TRACKED 300",
+      "tracking": 300,
+      "width": 393.0
+     },
+     {
+      "align": "center",
+      "fill": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "font": "Arial-BoldMT",
+      "id": "tracked_center",
+      "kind": "text",
+      "leading": 48.0,
+      "name": "Tracked center",
+      "opacity": 100,
+      "pos": [
+       640.0,
+       590.0
+      ],
+      "size": 40.0,
+      "text": "TRACKED 300",
+      "tracking": 300,
+      "width": 393.0
+     },
+     {
+      "align": "right",
+      "fill": [
+       0.0549,
+       0.0667,
+       0.0863
+      ],
+      "font": "Arial-BoldMT",
+      "id": "tracked_right",
+      "kind": "text",
+      "leading": 48.0,
+      "name": "Tracked right",
+      "opacity": 100,
+      "pos": [
+       1180.0,
+       660.0
+      ],
+      "size": 40.0,
+      "text": "TRACKED 300",
+      "tracking": 300,
+      "width": 393.0
+     }
+    ],
+    "id": "tracked",
+    "kind": "group",
+    "name": "Tracked",
+    "opacity": 100
+   }
+  ],
+  "name": "T text",
+  "w": 1280
+ }
+}

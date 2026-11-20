@@ -1,0 +1,9 @@
+{
+  "_comment": "Copie para config.local.json (nunca vai para o git) e preencha para ESTA maquina. Qualquer chave tambem pode vir de uma variavel de ambiente DE_<CHAVE>. Chave vazia = o padrao do motor.",
+  "brand": "demo",
+  "brands_dir": "",
+  "ps_progid": "",
+  "ai_progid": "",
+  "run_dir": "",
+  "timeout": 180
+}

@@ -1,0 +1,17 @@
+name: regress
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  core:
+    runs-on: windows-latest          # the demo brand measures text with the Arial that ships with Windows
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python test/test_static.py
+      - run: python test/regress_ir.py compare test/regress_base_demo.json
+      - run: python examples/thumb.py
